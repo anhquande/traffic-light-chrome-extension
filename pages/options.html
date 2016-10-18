@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Traffic Light Extension Options</title>
+	<link href="/vendors/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/vendors/bower_components/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="container">
+
+
+		<div class="form-group">
+			<label for="redurl" class="control-label">Red URL</label>
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-lightbulb-o fa"  style="color:red" aria-hidden="true"></i></span>
+                <select class="selectpicker input-group-addon"  name="redmethod" title="Select Request Method ">
+                    <option>GET</option>
+                    <option>POST</option>
+                </select>
+				<input type="text" class="form-control" name="redurl" id="redurl" placeholder="Target URL for Red button" />
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="yellowurl" class="control-label">Yellow URL</label>
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-lightbulb-o fa"  style="color:yellow" aria-hidden="true"></i></span>
+                 <select class="selectpicker input-group-addon"  name="yellowmethod" title="Select Request Method ">
+                    <option>GET</option>
+                    <option>POST</option>
+                </select>
+
+				<input type="text" class="form-control" name="yellowurl" id="yellowurl" placeholder="Target URL for Yellow button" />
+			</div>
+		</div>
+
+        <div class="form-group">
+			<label for="greenurl" class="control-label">Green URL</label>
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-lightbulb-o fa"  style="color:green" aria-hidden="true"></i></span>
+                <select class="selectpicker input-group-addon"  name="greenmethod" title="Select Request Method ">
+                    <option>GET</option>
+                    <option>POST</option>
+                </select>
+
+				<input type="text" class="form-control" name="greenurl" id="greenurl" placeholder="Target URL for Green button" />
+			</div>
+		</div>
+		<div class="form-group">
+			<button id="save" type="button" class="btn btn-primary  btn-block ">Save</button>
+		</div>
+		<div id="status">
+		</div>
+	</div>
+
+	<script src="/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="/js/options.js"></script>
+</body>
+
+</html>
